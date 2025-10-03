@@ -72,3 +72,30 @@ nav a{
     text-decoration: none;
     color: red;
 }
+
+section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    padding-top: 10px;
+}
+
+section img{
+    height: 450px;
+    width: 250px;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    transition: 1s;
+}
+
+section img:hover{
+    top: 0px;
+}
+
+section card{
+    height: 450px;
+    width: 250px;
+}

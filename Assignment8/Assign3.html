@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Assignment 3</title>
+    <style>
+        .parent{
+            height: 120px;
+            width: 120px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 6px solid red;
+            border-radius: 75px;
+            margin: 250px;
+            animation: spin 1s 2s infinite normal;
+        }
+
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        .box1{
+            height: 22px;
+            width: 22px;
+            background-color: black;
+            border: 4px solid white;
+            margin-bottom: 10px;
+            display: flex;
+            border-radius: 75px;
+            margin-top: -6px;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="parent">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

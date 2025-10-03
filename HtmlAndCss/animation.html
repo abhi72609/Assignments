@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+    <style>
+        h1{
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            transition: 1s;
+            border: 15px dashed gray;
+            border-bottom: 15px dashed red;
+            border-radius: 70px;
+            animation-name: spin;
+            animation-duration: 1s;
+            /* animation-iteration-count: 5; */
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: normal;
+            animation-direction: reverse;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(300deg);
+            }
+        }
+
+
+
+        img{
+            margin: 100px;
+            animation: heart 1s 2s alternate infinite;
+        }
+        @keyframes heart{
+            0%{
+                transform: scale(.2);
+            }
+            100%
+            {
+                transform: scale(2);
+            }
+        }
+
+    </style>
+<body>
+    </body>
+        
+    <h1>
+
+    </h1>
+    <!-- <form action="loading">
+        <fieldset><h1>Loading</h1></fieldset>
+    </form> -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMv98LE3nJBPORvgwYsySFLYEN7aLy5AVydQ&s" alt="">
+</body>
+</html>

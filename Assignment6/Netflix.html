@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        .headerSection{
+            display: flex;
+            color: white;
+            height: 70px;
+            justify-content: center;
+            justify-content: space-between;
+            padding: 10px 80px;
+            align-items: center;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn select{
+            background-color: rgba(0, 0, 0, 0.66);
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .btn button{
+            background-color: rgb(245,26,26);
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .logo>img{
+            height: 60px;
+        }
+
+        .bodySection{
+            height: 88vh;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .select{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        button{
+            background-color: rgb(225, 59, 59);
+        }
+
+        .netflix{
+            background-image: url(https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .netflixlayer{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.587);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="netflix">
+            <div class="netflixlayer">
+                <div>
+                <div class="headerSection">
+                <div class="logo"><img src="./images.jpeg"></div>
+                <div class="btn">
+                    <select class="select">
+                        <option value="English">English</option>
+                        <option value="English">Hindi</option>
+                    </select>
+                
+                    <button>Sign in</button> 
+                </div>
+            </div>
+
+            </div>
+            
+            
+            <div class="bodySection">
+                <section>
+                    <h1>Unlimited movies, TV <br>shows and more</h1>
+                    <b>Starts at ₹149. Cancel at any time.</b>
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                    <form>
+                        <input type="text" placeholder="Email Address">
+                        <button>Get Started</button>
+                    </form>
+                </section>
+            </div>
+            </div>        
+    </div>
+</body>
+</html>

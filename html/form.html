@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- <td>
+        
+        <table >
+            <tr>Infromation</tr>
+            <tr>Input</tr>
+        </table>
+    </td> -->
+    <form action="">
+        <label>
+            Name : 
+            <input type="text">
+        </label>
+        <br>
+
+        <label>DOB : </label>
+        <input type="date">
+        <input type="time">
+        <input type="datetime-local">
+        <input type="week">
+        <br>
+
+        <label for="">Age : </label>
+        <input type="number">
+        <br>
+
+        <label>phone : </label>
+        <input pattern=[0-9]{10} type="tel">
+        <br>
+
+        <label for="">Address : </label>
+        <textarea rows="2" cols="10"></textarea>
+        <br>
+        <fieldset>
+            <legend align="right">Facebook Login</legend>
+            <label>Email : </label>
+            <input type="email">
+            <br>
+            <label for="">Password : </label>
+            <input type="password">
+        </fieldset>
+        <br>
+        <label>Gender : </label>
+        <input name="rambo" id="r1" type="radio">
+        <label for="r1">Male</label>
+        <input name="rambo" id="r2" type="radio">
+        <label for="r2">Female</label>
+        <input name="rambo" id="r3" type="radio">
+        <label for="r3">Other</label>
+        <br>
+        
+        <lebel for="">Uplode</lebel>
+        <input accept=".png, .jpeg, .jpg" type="file">
+        <input accept=".html" type="file">
+        <br>
+
+        <label for="">Document : </label>
+        <input id="c1" type="checkbox"><lebel for="c1">Ration card</lebel>
+         <input id="c2" type="checkbox"><lebel for="c2">Ration card</lebel>
+          <input id="c3" type="checkbox"><lebel for="c3">Ration card</lebel>
+          <br>
+          <label for="" >City</label>
+          <select>
+            <option>Bengaluru</option>
+            <option>Chennai</option>
+            <option>Mysuru</option>
+            <option>Mumbai</option>
+          </select>
+          <br>
+        <input type="submit">
+        <button>Login</button>
+    </form>
+</body>
+</html>

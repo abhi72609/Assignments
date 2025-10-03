@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        div
+        {
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+          /* 1.  Descandant  Combinator (" ")*/
+        .sub_child h1
+        {
+            background-color: yellow;
+            color: chocolate;
+        }
+
+        .parent h1
+        {
+            background-color: chartreuse;
+            color: blueviolet;
+        } 
+        
+
+
+        /*  2.  Child Combinator (">")*/
+        .parent > h1{
+            color: aqua;
+            background-color: yellow;
+        }
+
+        .Great_subChild > h1
+        {
+            color: blue;
+            background-color: turquoise;
+        }
+        
+        /* Adjecent Sibling Combinator (*) */
+        .elder + p{
+            color: red;
+            background-color: yellowgreen;
+        }
+
+
+        /* General sibling Combinator*/
+        .second ~ p
+        {
+            background-color: aquamarine;
+            color: chocolate;
+        }
+        
+        .second ~ a
+        {
+            background-color: beige;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <h1>child heading</h1>
+        <b>child bold</b>
+        <div class="child">
+            <h1>sub child</h1>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, labore dolor? Iste, accusamus atque quis consequatur qui eaque, fuga cumque a inventore corporis iusto quasi modi excepturi nesciunt aperiam exercitationem?</P>
+            <div class="Sub_child">
+                <h1>Great Sub Child</h1>
+                <div class="Great_subChild">
+                    <h1>Grand Sub Child</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quos excepturi, expedita repudiandae at, qui delectus est molestias quasi non, totam nemo.</p>
+    <p> Cumque aperiam deleniti dolore iusto nemo inventore officiis?</p>
+    <h1 class="elder">First Sibling</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas modi cum possimus, dolorem laboriosam alias dolor distinctio repudiandae, dignissimos debitis, exercitationem reprehenderit unde dolores. Id doloribus dolorem praesentium ipsum voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, incidunt blanditiis fugit dolor dolore nihil sunt qui esse eum quaerat tenetur sapiente commodi non dicta delectus dignissimos, doloremque ratione? Saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aperiam corrupti hic ex debitis est, aliquid quasi quaerat officia dicta ipsa maxime pariatur facilis quas sint consequatur unde, quae tempore.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, facere! Tempore, voluptatem odio sed pariatur dignissimos provident necessitatibus a eius similique, fugit corporis ipsam labore, dolorum repudiandae sit excepturi eligendi!</p>
+    <h1 class="second">Second Sibling </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas modi cum possimus, dolorem laboriosam alias dolor distinctio repudiandae, dignissimos debitis, exercitationem reprehenderit unde dolores. Id doloribus dolorem praesentium ipsum voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, incidunt blanditiis fugit dolor dolore nihil sunt qui esse eum quaerat tenetur sapiente commodi non dicta delectus dignissimos, doloremque ratione? Saepe.</p>
+    <a href="">Click</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aperiam corrupti hic ex debitis est, aliquid quasi quaerat officia dicta ipsa maxime pariatur facilis quas sint consequatur unde, quae tempore.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, facere! Tempore, voluptatem odio sed pariatur dignissimos provident necessitatibus a eius similique, fugit corporis ipsam labore, dolorum repudiandae sit excepturi eligendi!</p>
+    <a href="">Not Click</a>
+</body>
+</html>

@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+}
+
+header{
+    height: 90px;
+    width: 1240px;
+    /* width: 90vw; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    padding: 0px 140px;
+    /* background: linear-gradient(to left, rgb(205, 107, 37), rgb(227, 178, 142),rgb(207, 98, 21)); */
+    background-color: white;
+    position: fixed;
+    right: 2px;
+    left: 1px;
+    top: 10px;
+    /* bottom: 0px; */
+}
+
+header > .logo{
+    height: 70px;
+    display: flex;
+}
+
+header a{
+    
+    text-decoration: none;
+    padding: 1px 10px;
+    font-size: large;
+    color: black;
+}
+
+header > button{
+    height: 35px;
+    width: 90px;
+    display: flex;
+    background-color: rgb(109, 216, 109);
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+/* .button:hover{
+    background-color: aquamarine;
+} */
+header > .Instagram{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+header > .Facebook{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px; 
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.Section1 > img{
+    display: flex;
+    /* height:900px;
+    width: 1000px; */
+    height: 78vh;
+    width: 78vb;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 420px;
+}
+
+.Section1{
+    /* background-color: rgba(210, 105, 30, 0.196); */
+    background: linear-gradient(to left, rgb(205, 107, 37), rgb(227, 178, 142),rgb(207, 98, 21));
+}
+
+
+.Section3{
+    height: 88vh;
+    /* background-color: rgb(241, 241, 150); */
+    background: linear-gradient(to top, rgba(231, 231, 46),rgba(234, 234, 95), rgba(255, 255, 224));
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+.Section3 > h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.Section3 > b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.Section3 > p{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Section3 > .img1{
+    /* display: flex;
+    height: 1px;
+    width: 1px;
+    justify-content: center;
+    align-content: center; 
+    align-items: center;
+    margin: 100px;
+    border: 40px solid darkgoldenrod; */
+    position: absolute;
+    right: 10px;
+    bottom: 2px;
+
+}
+.Section3 > .img2{
+    /* display: flex;
+    height: 10px;
+    width: 10px;
+    justify-content: space-evenly;
+    padding-left: 1200px;
+    align-content: center; 
+    align-items: center;
+    margin: 100px;  */
+    position: absolute;
+    left: 10px;
+    bottom: 2px;
+}
+
+
+
+
+
+
+
+
+border{
+    background-color: black;
+    display: grid;
+    color: white;
+    grid-template-columns: 250px 250px 250px 250px; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+border > .company{
+    display: gird;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+    /* margin: 40px;
+    padding: 0px 20px; */
+    
+}
+
+border img{
+    height: 70px;
+    display: flex;
+}
+
+.FollowSubscribe{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 40px 40px 40px 40px; */
+}
+
+.FollowSubscribe > .Instagram{
+    display: grid;
+    align-items: start;
+    grid-template-columns: 40px ;
+}
+.FollowSubscribe > .Facebook{
+    display: grid;
+    justify-content:center;
+    
+    grid-template-columns: 40px;
+}
+border b{
+    color: darkgoldenrod;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Assignment 4</title>
+    <style>
+        .parent{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border: 10px solid black;
+            margin: 250px;
+            border-radius: 75px;
+            border-bottom: 10px solid white;
+            border-top: 10px solid red;
+            display: flex;
+            animation: spin 1s 2s infinite normal;
+        }
+
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        /* .arrow1{
+            height: 10px;
+            width: 10px;
+            background-color: red;
+            display: flex;
+        } */
+
+        
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="parent">
+        <div class="arrow1"></div>
+        <div class="arrow2"></div>
+        <!-- <i class="fa-solid fa-arrow-right" style="color: #e90707;"></i> -->
+    </div>
+</body>
+</html>

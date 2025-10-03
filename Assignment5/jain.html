@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAIN(Demand-to-be-University)</title>
+    <style>
+        body{
+            background-color: rgb(253 208 36);
+        }
+
+        #header{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #mainbody{
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 40px;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+
+        #left{
+            display: flex;
+            height: 90px;
+            width: 400px;
+            flex-direction: column;
+            padding-top: 200px;
+            justify-content: center;
+
+        }
+
+        #lefttext,.lt-1{
+            display: flex;
+            height: 40px;
+            background-color: rgb(0 28 84);
+            color: white;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+        }
+
+        .border{
+            display: flex;
+            height: 100px;
+            background-color: rgb(0 28 84);
+            color: rgb(253 208 36);
+            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+         /* .lt-1{
+            display: flex;
+            height: 40px;
+            background-color: rgb(0 28 84);
+            color: white;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center; 
+        } */
+        #phone{
+            display: flex;
+            background-color: rgb(0 28 84);
+            color: white;
+            align-items: center;
+            height: 60px;
+            width: 230px;
+            border-radius: 50px;
+            padding-left: 15px;
+        }
+        
+        #form{
+            display: flex;
+            text-align: center;
+            height: 500px;
+            width: 250px;
+            justify-content: space-between;
+            background-color: white;
+            color: black;
+            flex-direction: column;
+            padding-top: 10px;
+            padding-bottom: 15px;
+
+        }
+
+        input,#select{
+            height: 40px;
+            width: 190  px;
+        }
+
+        #name{
+            justify-content: space-evenly;
+        }
+
+        #button{
+            /* display: flex; */
+            /* justify-content: center; */
+            border-radius: 100rem;
+            color: white;
+        }
+
+        #Program{
+            width: 100px;
+        }
+
+        #mba{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .line{
+            display: flex;
+            align-items: center;
+            font-size: xx-large;
+            font-size: 100px;
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body >
+    <div id="header">
+        <div>
+            <img src="./Jain-Online-Logo.webp" height="90px" and width="400px">
+        </div>
+        <div id="phone">
+            <h1>+919240013644</h1>
+            
+        </div>
+    </div >
+    
+
+    <div id="mainbody">
+        <div id="left">
+            <h2>Lift your career with</h2>
+            <h1>Online Degree Programs</h1>
+            <div id="lefttext">
+                <span class="lt-1">MBA &nbsp;|</span>
+                <span class="lt-1">MCA &nbsp;|</span> 
+                <span class="lt-1">M.COM &nbsp;|</span>
+                <span class="lt-1">MA &nbsp;|</span>
+                <span class="lt-1">BA &nbsp;|</span>
+                <span class="lt-1">BCOM &nbsp;|</span> 
+                <span class="lt-1">BBA</span>
+            </div>
+            <img src="./UGC-logo.0f784820.webp">
+        </div>
+
+        <div id="girlpicwithbook">
+            <img src="./GirlPic.png">
+        </div>
+
+
+        <div id="form">
+            <caption><h2>ENQUIRE NOW</h2></caption>
+                <div id="name">
+                    <input  type="text" placeholder="Name:">
+                </div>
+
+                <div>
+                    <input id="Email" type="text" placeholder="Email Id:">
+                </div>
+                    
+                <div>
+                    <input id="Phone No" type="[0-9]{10}" type="tel" placeholder="Phone Number">
+                </div>
+        
+            
+        <div>
+            <select type="text" name="Select Program" id="select" placeholder="Select Program" width="250px">
+                <option disabled selected program>Select Program</option>
+                <option value="BCOM">BCOM</option>
+                <option value="BA">BA</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="MA">MA</option>
+                <option value="MCOM">MCOM</option>
+                <option value="MCA">MCA</option>
+                <option value="MBA">MBA</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="text" name="Select Elective" id="Elective" placeholder="Select Elective">
+        </div>
+
+        <div>
+            <input type="text" name="Select State" id="Select State" placeholder="Select State">
+        </div>
+        
+        <div id="button">
+            <button >SUBMIT</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="border" width="100px">
+
+            <div id="mba" width="100px">
+                <span class="b-1">40+ <br>MBA </span>
+            </div>
+            <div class="line">|</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div id="mca" width="100px">
+                <span class="b-1">2000+ <br>MCA &nbsp;</span> 
+            </div>
+            <div class="line">|</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div>
+            <span id="m.com" width="1000px">20,000+ <br>Placement</span>
+            </div>
+            <div class="line">|</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <div id="emi">
+                <span class="b-1">0 Cost <br>EMI </span>
+            </div>
+    </div>
+    
+</body>
+</html>

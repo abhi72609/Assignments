@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .parent{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: flex;
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* justify-content: space-around;
+            flex-direction: row; 
+            /* flex-direction: row-reverse;  to reverse the row  */
+            /* flex-direction: column; 
+            flex-direction: column-reverse;  
+             */
+
+            justify-content: start; /*start means left side*/
+            justify-content: end;   /*end means right side*/
+            justify-content: center; /*center means center side*/
+            
+            justify-content: space-between; /*space between contain*/
+            justify-content: space-around;  /*according to child demension space is provided*/
+            justify-content: space-evenly;
+
+            /* used to align the child div in page in vertical direction
+            1 start means top
+            2 end means bottom
+            3 center in middle of parent div */
+            align-items: start;
+            align-items: end;
+            align-items: center;
+
+            .child1,.child2,.child3{
+                height: 100px;
+                width: 100px;
+                color: aliceblue;
+                font-size: 50px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .child1{
+                background-color: orange;
+                /*
+                instead of writing here write in universal selector for all child at time
+                 display: flex;
+                justify-content: center; */
+            }
+
+            .child2{
+                background-color: white;
+                color: blue;
+                /*
+                instead of writing here write in universal selector for all child at time
+                 display: flex;
+                justify-content: center; */
+            }
+
+            .child3{
+                background-color: green;
+                /*
+                instead of writing here write in universal selector for all child at time
+                 display: flex;
+                justify-content: center; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+    </div>
+</body>
+</html>

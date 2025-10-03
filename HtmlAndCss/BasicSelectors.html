@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selector</title>
+
+    <style>
+        /* TAGNAME SELECTOR */
+        h1{
+            background-color: aqua;
+            color: white
+        }
+
+
+        .rambo{
+            background-color: brown;
+            color: white;
+        }
+
+       
+        .jango{
+            background-color: chocolate;
+            color: gold;
+        }
+
+         
+        #bold{
+            background-color: darkblue;
+            color: cyan;
+        }
+
+        *{
+            margin: 10px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        li{
+            background-color: cornflowerblue;
+        }
+
+        p,#bold,.rambo{
+            background-color: blueviolet;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <ul>
+            <li>Basic Selector
+                <li>Universal Selector(*)</li>
+                <li>Tagname Selector(h1,p)</li>
+                <!-- Interview Qn : how class and id are different from each other is they have same properties -->
+                <li class="rambo">class selector(.class)</li>
+                <li class="jango">Id selector(#id)</li>
+                <li>Group  selector</li>
+                </ul>
+            </li>
+    </ul>
+
+    <h1 class="rambo">Hello</h1>
+    <p id="bold" class="jango">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dicta nostrum molestiae dolores unde veritatis accusamus ducimus vitae ea officiis accusantium, laboriosam tempore. Reprehenderit, voluptatum eveniet? Nostrum cumque consectetur officia?
+    Nostrum incidunt architecto illum praesentium beatae, possimus nihil dolor molestiae soluta tempora deserunt rem, numquam, id vero. Vel, minus. Soluta modi quae perferendis, amet veniam neque aspernatur velit aliquam in?</p>
+
+    <h1>HTML,CSS,JAVASCRIPT</h1>
+    <b id="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iure hic distinctio? Pariatur soluta repellendus dolorem, nemo dignissimos consequatur et nostrum nisi vel, sapiente id, earum excepturi modi in explicabo.</b>
+</body>
+</html>

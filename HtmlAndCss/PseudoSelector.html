@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+</head> 
+    <style>
+        /* First letter */
+        p::first-letter{
+            font-size: 100px;
+            color: chocolate;
+            font-weight: bold;
+        }
+
+        p{
+            text-indent: 100px;
+        }
+
+        p::first-line{
+            font-weight: bold;
+            font-size: 30px;
+
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        /* :: Before */
+        h1::before{
+            content: "Welcome to ";
+        }
+        /*  :: After */
+        h1::after{
+            content: " in HTML";
+        }
+
+        input{
+            height: 40px;
+            width: 250px;
+            font-size: 30px;
+            color: rgba(255, 68, 0, 0.553);
+        }
+
+        input::placeholder{
+            color: orangered;
+            text-shadow: 0px 0px 10px orange;
+        }
+    </style>
+<body>
+    <input type="text" placeholder="Enter the Name">
+    <h1>Pseudo element</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nihil consequatur eaque animi perspiciatis cumque obcaecati deleniti expedita earum ullam consectetur magnam, iste eligendi natus rerum explicabo sit ut eum.
+    Veniam necessitatibus, provident adipisci facilis dolor cupiditate quidem perferendis optio qui libero nobis commodi ipsa accusantium, autem minus tempore tempora officiis ad quisquam! Aliquam vel unde fugit aperiam sint iure.</p>
+    <div class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit sequi iusto rerum ?</div>
+</body>
+</html>

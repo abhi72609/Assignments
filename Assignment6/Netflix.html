@@ -50,6 +50,18 @@
             align-items: center;
             text-align: center;
         }
+        .section h1,p,b{
+            height: 15px;
+            margin: 20px;
+        }
+        .bodySection input{
+            height: 30px;
+            width: 200px;
+        }
+        .bodySection button{
+            height: 35px;
+            width: 100px;
+        }
         
         .select{
             display: flex;
@@ -74,24 +86,100 @@
             background-color: rgba(0, 0, 0, 0.587);
         }
         
+
+        .bodySection2{
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+
+        .bodySection2 .heading{
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: start;
+            justify-content: start;
+            padding-top: 50px;
+            padding-left: 100px;
+            font-size: xx-large;
+            font-weight: 300;
+        }
+
+        
+        .container{
+            height: 340px;
+            width: 80vw;
+            /* border: 2px solid black; */
+            margin: 100px auto;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            overflow-x: scroll;
+        }
+        .box{
+            height: 90%;
+            width: 240px;
+            border: 2px solid black;
+            border-radius: 50px;
+            flex-shrink: 0;
+            background-size: cover;
+            position: relative;
+            transition: 0.5s ease all;
+        }
+
+        .box:hover{
+            transform: scale(1.1);
+        }
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        span{
+            font-size: 100px;
+            font-weight: 700;
+           -webkit-text-stroke:2px white ;
+           position: absolute;
+           bottom: 20px;
+           left: -24px;
+        }
+        .box1{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYgqP-FM9E4u1IbMtOKfqd2ha2nti95bI-jg9xOXxJAcO6Xj9hwy02O4dFu0-oZ_jSi-NQFHPZQwn1NO7eA5LVqqGZIfy9YPjg1G6GzZPMRODawEZXb_7Ks9Ryjl-xUANYCs.webp?r=d90');
+        }
+
+        .box2{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABemK-aHwX63DztqbWwQ0xnYGvHYuoYkQ3l3ZIwftPjmuJxC461m-FOI7ZN_bzolsgGd_3_dbacKgr5mV292UjjEYJGCgIubIQOs.webp?r=273');
+        }
+
+        .box3{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWrTjWMrsToh9vAoz8rKrhSSHdJW6bmhL8Lvv63zCy1lo3O1TFqvZH4U80xS1vDJJV00sc97Ntd2b1Y1vh3v4SIs60pAtWC6pottJ80j5h4ITJPEURiTJEH4O_a47L1S0qlG.webp?r=f17');
+        }
+        .box4{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQyNT9Mdd2wR9KVzh2iO_T3rTEydvDSlf0_4EnLYou_zEgzr5juLda9NmQT2srWqiFh-7PKVRzRgoB5Eg-xA5DQHFPeSd1MHDzryhJqxIeayTICsi6DMPp4I8uH8NdtaV5Ji.webp?r=e05');
+        }
+        .box5{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWUsrobyjfthn3cn_9LIwE_08qG_rgI5BTJaI7ecvgxEMp1e2Zu7hPQ9HGeNgVVWrgu2Wj-vfUphdz8RniXmEvla02KBce2uV_kB0vtctN0CX4QBQDr4oQpGGQd59uuKk87Z.webp?r=b86');
+        }
+        .box6{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZxdHsYg10iHLQm7e8pxLnbn1eGa3nJwHH_AVi2qgNL6hYH9xMi2ESvKx-zy40e9woWRPcPuwFNR6iD2bMQC7TbcfsDWVccDtMk.webp?r=213');
+        }
+
     </style>
 </head>
 <body>
     <div class="netflix">
             <div class="netflixlayer">
                 <div>
-                <div class="headerSection">
-                <div class="logo"><img src="./images.jpeg"></div>
-                <div class="btn">
-                    <select class="select">
-                        <option value="English">English</option>
-                        <option value="English">Hindi</option>
-                    </select>
-                
-                    <button>Sign in</button> 
+                    <div class="headerSection">
+                    <div class="logo"><img src="./images.jpeg"></div>
+                    <div class="btn">
+                        <select class="select">
+                            <option value="English">English</option>
+                            <option value="English">Hindi</option>
+                        </select>
+                    
+                        <button>Sign in</button> 
+                    </div>
                 </div>
-            </div>
-
             </div>
             
             
@@ -104,6 +192,23 @@
                         <input type="text" placeholder="Email Address">
                         <button>Get Started</button>
                     </form>
+                </section>
+            </div>
+
+            <div class="bodySection2">
+                <section>
+                    <div class="heading">
+                        Trending Now
+                    </div>
+                    <diV class="container">
+                            <div class="box box1"><span>1</span></div>
+                            <div class="box box2"><span>2</span></div>
+                            
+                            <div class="box box3"><span>3</span></div>
+                            <div class="box box4"><span>4</span></div>
+                            <div class="box box5"><span>5</span></div>
+                            <div class="box box6"><span></span>></div>
+                    </diV>
                 </section>
             </div>
             </div>        

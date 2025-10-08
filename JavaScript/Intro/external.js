@@ -3,7 +3,7 @@ var a; //Initalisation
 a = 10; //Initalisation
 a = "Hello" // Re-Initalisation
 var a = true;
-console.log("The Value of a is"+ a);
+console.log("The Value of a is "+ a);
 
 //Let
 let b = 100; // declare and Initialisation
@@ -15,3 +15,5 @@ console.log("The Value of b is "+b);
 const c = 1000; // declare initialisation
 // const c = true; // !re decalre
 c = true; // !Re Initalisation 
+
+

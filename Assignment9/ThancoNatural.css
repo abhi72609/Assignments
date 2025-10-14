@@ -156,7 +156,7 @@ header > .Facebook{
 
 
 
-
+/* 
 border{
     background-color: black;
     display: grid;
@@ -174,14 +174,40 @@ border > .company{
     justify-content: center;
     
     /* margin: 40px;
-    padding: 0px 20px; */
+    padding: 0px 20px; 
     
 }
 
 border img{
     height: 70px;
     display: flex;
+} */
+
+.border {
+    background-color: black;
+    display: grid;
+    color: white;
+    grid-template-columns: 250px 250px 250px 250px; 
+    align-items: center;
+    justify-content: center;
 }
+
+.border > .company {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.border img {
+    height: 70px;
+    display: flex;
+}
+
+.border b {
+    color: darkgoldenrod;
+}
+
 
 .FollowSubscribe{
     display: grid;

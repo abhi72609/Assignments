@@ -1,0 +1,323 @@
+        *{
+            margin: 0px;
+        }
+        .headerSection{
+            display: flex;
+            color: white;
+            height: 70px;
+            justify-content: center;
+            justify-content: space-between;
+            padding: 10px 80px;
+            align-items: center;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn select{
+            background-color: rgba(0, 0, 0, 0.66);
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .btn button{
+            background-color: rgb(245,26,26);
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .logo>img{
+            height: 60px;
+        }
+
+        .bodySection{
+            height: 88vh;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .section h1,p,b{
+            height: 15px;
+            margin: 20px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bodySection input{
+            height: 30px;
+            width: 250px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        .bodySection button{
+            height: 35px;
+            width: 150px;
+        }
+        .select{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        button{
+            background-color: rgb(225, 59, 59);
+            border-radius: 10px;
+        }
+        .netflix{
+            background-image: url(https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .netflixlayer{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.587);
+        }
+
+
+        .bodySection2{
+            height: 140vh;
+            background-color: rgb(0, 0, 0);
+            background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+            border: solid .25rem transparent;
+            border-bottom: none;
+            color: white;
+        }
+
+        .bodySection2 .heading{
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: start;
+            justify-content: start;
+            padding-top: 50px;
+            padding-left: 100px;
+            font-size: xx-large;
+            font-weight: 300;
+        }
+
+        .bodySection2 .heading2{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            margin-left: 100px;
+            color: rgb(252, 252, 252);
+            height: 50px;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bodySection2 .MoreReason{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .MoreReason #box{
+            height: 250px;
+            width: 250px;
+            background: linear-gradient(rgb(10, 10, 35),rgb(17, 17, 84),rgb(81, 35, 45));
+            border: 9px solid rgb(10, 10, 35);
+            border-radius: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .MoreReason .top-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            margin-top: 15px;
+            gap: 10px;
+        }
+
+        .MoreReason p{
+            height: 90px;
+            width: 220px;
+            align-items: center;
+            margin-top: 25px;
+            align-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: rgba(255, 255, 255, 0.703);
+        }
+
+
+
+
+
+
+
+        
+        .container{
+            height: 340px;
+            width: 80vw;
+            margin: 100px auto;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            overflow-x: scroll;
+        }
+        .box{
+            height: 90%;
+            width: 240px;
+            border: 2px solid black;
+            border-radius: 50px;
+            flex-shrink: 0;
+            background-size: cover;
+            position: relative;
+            transition: 0.5s ease all;
+        }
+
+        .box:hover{
+            transform: scale(1.1);
+        }
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        span{
+            font-size: 100px;
+            font-weight: 700;
+           -webkit-text-stroke:2px white ;
+           position: absolute;
+           bottom: 20px;
+           left: -24px;
+        }
+        .box1{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYgqP-FM9E4u1IbMtOKfqd2ha2nti95bI-jg9xOXxJAcO6Xj9hwy02O4dFu0-oZ_jSi-NQFHPZQwn1NO7eA5LVqqGZIfy9YPjg1G6GzZPMRODawEZXb_7Ks9Ryjl-xUANYCs.webp?r=d90');
+        }
+
+        .box2{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABemK-aHwX63DztqbWwQ0xnYGvHYuoYkQ3l3ZIwftPjmuJxC461m-FOI7ZN_bzolsgGd_3_dbacKgr5mV292UjjEYJGCgIubIQOs.webp?r=273');
+        }
+
+        .box3{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWrTjWMrsToh9vAoz8rKrhSSHdJW6bmhL8Lvv63zCy1lo3O1TFqvZH4U80xS1vDJJV00sc97Ntd2b1Y1vh3v4SIs60pAtWC6pottJ80j5h4ITJPEURiTJEH4O_a47L1S0qlG.webp?r=f17');
+        }
+        .box4{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQyNT9Mdd2wR9KVzh2iO_T3rTEydvDSlf0_4EnLYou_zEgzr5juLda9NmQT2srWqiFh-7PKVRzRgoB5Eg-xA5DQHFPeSd1MHDzryhJqxIeayTICsi6DMPp4I8uH8NdtaV5Ji.webp?r=e05');
+        }
+        .box5{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWUsrobyjfthn3cn_9LIwE_08qG_rgI5BTJaI7ecvgxEMp1e2Zu7hPQ9HGeNgVVWrgu2Wj-vfUphdz8RniXmEvla02KBce2uV_kB0vtctN0CX4QBQDr4oQpGGQd59uuKk87Z.webp?r=b86');
+        }
+        .box6{
+            background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZxdHsYg10iHLQm7e8pxLnbn1eGa3nJwHH_AVi2qgNL6hYH9xMi2ESvKx-zy40e9woWRPcPuwFNR6iD2bMQC7TbcfsDWVccDtMk.webp?r=213');
+        }
+
+
+
+
+
+
+
+
+
+        .bodySection3{
+            height: 100vh;
+            border-top: 7px solid black;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            display: flex;
+            padding: 10px 70px;
+        }
+
+        .footerSubsection p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25px;
+            width: 480px;
+            margin-left: 450px;
+            padding-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .footerSubsection input{
+            height: 45px;
+            width: 370px;
+            margin-left: 390px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: large;
+        }
+        
+        .footerSubsection button{
+            height: 52px;
+            width: 230px;
+            margin-top: 20px;
+            border-radius: 7px;
+            font-size: larger;
+            color: white;
+        }
+
+        .form input{
+            font-size: 55px;
+        }
+
+        .query{
+            display: flex;
+            height: 10px;
+            width: 240px;
+            padding-top: 45px;
+            padding-left: 75px;
+            gap: 35px;
+            margin-top: 35px;
+        }
+
+        .information{
+            display: grid;
+            height: 130px;
+            width: 700px;
+            background-color: black;
+            color: white;
+            grid-template-columns: 175px 175px 175px 175px;
+            gap: 20px;
+            padding-inline: 80px;
+            padding-top: 45px;
+            text-decoration: underline;
+            margin-top: 20px;
+        }
+
+
+        .b1 select{
+            display: flex;
+            height:  30px;
+            width: 80px;
+            background-color: white;
+            color: black;
+            margin-top: 40px;
+            margin-left: 75px;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 3px;
+            height: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .b1 select:hover{
+            height: 37px;
+            border: 5px solid rgb(177, 0, 0);       
+            transition: 1s;
+            
+        }
+
+        .NetflixIndia h5{
+            display: flex;
+            margin-top: 30px;
+            margin-left: 75px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }

@@ -48,15 +48,20 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .bodySection input{
-            height: 30px;
-            width: 250px;
+            height: 33px;
+            width: 300px;
             border-radius: 10px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: large;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px solid white;
+            align-items: center;
+            color: white;
         }
         .bodySection button{
-            height: 35px;
+            height: 40px;
             width: 150px;
+            color: white;
         }
         .select{
             display: flex;
@@ -66,6 +71,9 @@
         button{
             background-color: rgb(225, 59, 59);
             border-radius: 10px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
         }
         .netflix{
             background-image: url(https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg);
@@ -81,10 +89,15 @@
         }
 
 
+
+
+
+
+
         .bodySection2{
             height: 140vh;
-            background-color: rgb(0, 0, 0);
-            background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+            background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 
+                        80%,rgba(0, 0, 0, 0.1) 100%), black;
             border: solid .25rem transparent;
             border-bottom: none;
             color: white;
@@ -95,73 +108,15 @@
             font-family: Arial, Helvetica, sans-serif;
             align-items: start;
             justify-content: start;
-            padding-top: 50px;
+            padding-top: 40px;
             padding-left: 100px;
             font-size: xx-large;
             font-weight: 300;
         }
-
-        .bodySection2 .heading2{
-            display: flex;
-            justify-content: left;
-            align-items: center;
-
-            margin-left: 100px;
-            color: rgb(252, 252, 252);
-            height: 50px;
-            font-size: xx-large;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .bodySection2 .MoreReason{
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 5px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .MoreReason #box{
-            height: 250px;
-            width: 250px;
-            background: linear-gradient(rgb(10, 10, 35),rgb(17, 17, 84),rgb(81, 35, 45));
-            border: 9px solid rgb(10, 10, 35);
-            border-radius: 15px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: larger;
-            margin-top: 20px;
-            gap: 20px;
-        }
-
-        .MoreReason .top-heading{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: larger;
-            margin-top: 15px;
-            gap: 10px;
-        }
-
-        .MoreReason p{
-            height: 90px;
-            width: 220px;
-            align-items: center;
-            margin-top: 25px;
-            align-content: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
-            color: rgba(255, 255, 255, 0.703);
-        }
-
-
-
-
-
-
-
-        
         .container{
             height: 340px;
             width: 80vw;
-            margin: 100px auto;
+            margin: 70px auto;
             display: flex;
             gap: 30px;
             align-items: center;
@@ -215,6 +170,55 @@
             background-image: url('https://occ-0-3709-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZxdHsYg10iHLQm7e8pxLnbn1eGa3nJwHH_AVi2qgNL6hYH9xMi2ESvKx-zy40e9woWRPcPuwFNR6iD2bMQC7TbcfsDWVccDtMk.webp?r=213');
         }
 
+        .bodySection2 .heading2{
+            
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-left: 100px;
+            color: rgb(252, 252, 252);
+            height: 50px;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bodySection2 .MoreReason{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .MoreReason #box{
+            height: 250px;
+            width: 250px;
+            background: linear-gradient(rgb(10, 10, 35),rgb(17, 17, 84),rgb(81, 35, 45));
+            border: 9px solid rgb(10, 10, 35);
+            border-radius: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .MoreReason .top-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            margin-top: 10px;
+            gap: 10px;
+        }
+
+        .MoreReason p{
+            height: 90px;
+            width: 220px;
+            align-items: center;
+            margin-top: 25px;
+            align-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: rgba(255, 255, 255, 0.703);
+        }
 
 
 
@@ -224,7 +228,7 @@
 
 
         .bodySection3{
-            height: 100vh;
+            height: 90vh;
             border-top: 7px solid black;
             background-color: rgb(0, 0, 0);
             color: white;
@@ -295,7 +299,7 @@
             display: flex;
             height:  30px;
             width: 80px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.984);
             color: black;
             margin-top: 40px;
             margin-left: 75px;

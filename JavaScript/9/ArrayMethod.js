@@ -38,3 +38,20 @@ console.log(newArr);
 //Reverse - to reverse the array
 arr.reverse()
 console.log(arr);
+ console.log();
+ 
+// 24-OCT-2025
+// sort arr
+var arr1 = [23,45,2,64,24,3,'hi',"Hey",10,20,0,10,30];
+var sortArr1 = arr.sort((a,b) => {
+    return a - b; // For sorting in Asec
+    // return b - a; //desc
+})
+console.log(arr1);
+var index = arr1.indexOf('hi');
+var index = arr1.indexOf('10');
+var index = arr1.indexOf(10,1);
+console.log(index);
+
+var LastIndex = arr1.lastIndexOf(10);
+console.log(LastIndex);

@@ -14,7 +14,6 @@ class Student{
 }
 let s1 = new Student(434,"Jeevan",[123,456,789],["JAVA","SQL","WEB TECH"],"IT",
          "FullStackCourse",35000,12345678910,"18-07-2003","Ab@gmai.com");
-
 console.log(s1);
          
 

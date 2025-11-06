@@ -1,0 +1,30 @@
+form{
+    display: grid;
+    grid-template-columns: 150px 200px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+    gap: 13px;    
+    font-family: sans-serif;
+    border: 2px solid black;
+    margin-left: 400px ;
+    margin-right: 400px ;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+form button{
+    background-color: rgb(0, 32, 129);
+    color: aliceblue;
+    border: none;
+    box-shadow: 1px 1px 1px gray;
+    padding: 10px 5px;
+    border-radius:18px;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    left: 100px;
+    top: 10px;
+}

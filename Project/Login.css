@@ -1,0 +1,20 @@
+.login{
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: 450px;
+    border: 2px solid black;
+    height: 400px;
+    width: 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+form{
+    display:grid;
+    gap: 15px;
+}
+form input,button{
+    border-radius: 5px;
+    height: 20px;
+    width: 150px;
+}

@@ -49,3 +49,34 @@ function checkLogin(e){
         alert("Login Failed")
     }
 }
+
+
+
+let image = document.querySelectorAll(".pimage");
+let brand = document.querySelectorAll(".brand");
+let model = document.querySelectorAll(".model");
+let price = document.querySelectorAll("#price");
+let rating = document.querySelectorAll("#rating");
+
+console.log(image,brand,model,price,rating);
+
+
+async function fetchData()
+{
+    let res = await fetch('https://dummyjson.com/products');
+    let data = await res.json();
+    console.log(res);
+
+    for(let i=0; i<data.products.length;i++)
+    {   
+        image[i].src = data.products[i].thumbnail;
+        model[i].innerText = data.products[i].tittle;
+        brand[i].innertext = data.products[i].brand;
+        price[i].innerHTML = `<strike>M.R.P : ${data.products[i].price}</strike>
+                            <br> <big>Offer Price : ${Math.round(data.products[i].price - .15*data.products[i].price)}</big>`;                             
+        rating[i].innertext = data.products[i].rating;
+    }
+
+}
+
+fetchData();

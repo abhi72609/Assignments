@@ -1,21 +1,31 @@
 // Normal 
-// add(20,10) // function hoisting
-// function add(a,b){
-//     console.log("Add of : ", a+b);
-// }
+add(20,10) // function hoisting
+function add(a,b){
+    console.log("Add of : ", a+b);
+}
 
-// // Arrow
+//      ARROW
+// This won't Work
 // add1(20,30)
 // var add1 = (a,b) => {
 //     console.log("Add of : ", a+b);
 // }
+var add1 = (a,b) => {
+    console.log("Add of : ", a+b);
+}
+add1(20,30)
 
-// // Function
-// add2(23,12)
+//      FUNCTION
+// add2(23,12)              this Won't work
 // var add2 = function(a,b)
 // {
 //     console.log("Add of : ",a+b);
 // }
+// This will work
+var add2 = function(a,b){
+    console.log("Add of : ",a+b);
+}
+add2(23,12)
 
 
 let cart = [
@@ -32,18 +42,19 @@ let cart = [
     {
         id: 3,
         name: "Phone",
-        Price: 50000,
+        price: 50000,
     }
 ];
 
 for(let i=0; i<cart.length; i++){
     console.log(cart[i].name + " : " + cart[i].price);
-    return cart[i].name;
+    // return cart[i].name;
 }
 
 let cart1 = cart.forEach((i) => {
     console.log(i.name + " : "+ i.price); // it will to concatenation
     console.log(i.name + " : ", i.price); // 
+    
     return i;
 })
 console.log(cart1);

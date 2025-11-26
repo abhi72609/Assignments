@@ -28,12 +28,12 @@ console.log(k);
 
 //rest operator
 let arr1 = [1,2,3,4,5,6];
-let [x,y,w,...z] = arr1;
+let [x,y,w,...f] = arr1;
 console.log(x);
 console.log(y);
 console.log(w);
-console.log(z);
-console.log(z[0]);
+console.log(f);
+console.log(f[0]);
 
 
 

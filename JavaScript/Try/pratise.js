@@ -31,6 +31,59 @@ console.log(false === 0); // false
 console.log("5" * "2"); // 10 - bcz any operation except " + " will perfome normally only + will do concatenation
 console.log(typeof(null));//Object bcz - 
 
+console.log(typeof(NaN)); // Datatype - Number
+var c = NaN;
+console.log(c);
+console.log(NaN == NaN); // it can be any number so it is false
+console.log(NaN === NaN); // false it compare datatype as well as number so datatype is same but number can be anything
+console.log(" ");
+console.log(true+true); // 2 
+console.log([] == []); // false since "[] - arr" is Object in js and has refernce variable which hold address it use refernce for comparing and both the arr will have different address store no output will be false
+// console.log([] === []); // false
+console.log([] == 0);
+console.log([]);
+console.log(true == "1"); // true
+console.log(true === "1"); // false
+console.log("5" + true); //5true
+console.log(typeof(""));
+console.log(typeof(" "));
+
+console.log(" " == " "); // true - length base comparesion
+console.log(" ");
+console.log("" === " "); // false "" length 0 and " " length is 1 so value is not equal
+console.log(" " === " "); // true
+
+console.log("" == " "); //false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(" ");
+
+
+
+
+
+
+
+
+
 // FUNCTION
 console.log("Start");
 function test()
@@ -61,20 +114,20 @@ console.log(results);
 
 
 
-function add(a,b)
-{
-    return a+b;
-}
-function add(a,b)
-{
-    return a-b;
-}
-function total (m,n,sub,add)
-{
-    return add(m,n) + sub(m,n);
-}
-let result = total(10,20,sub,add);
-console.log(result);
+// function add(a,b)
+// {
+//     return a+b;
+// }
+// function add(a,b)
+// {
+//     return a-b;
+// }
+// function total (m,n,sub,add)
+// {
+//     return add(m,n) + sub(m,n);
+// }
+// let result = total(10,20,sub,add);
+// console.log(result);
 
 
 
@@ -103,6 +156,30 @@ console.log(res);
 let add4 = (a,b) => (a+b);
 let sum2 = add4(23,27);
 console.log(sum2);
+
+
+
+
+var arr = [12,"hi",'B',true,25];
+
+// PUSH
+arr.push(35,45);
+console.log(arr);
+
+// POP
+arr.pop();
+console.log(arr);
+
+//UNSHIFT
+arr.unshift()
+
+
+
+
+
+
+
+
 
 
 

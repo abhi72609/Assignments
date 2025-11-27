@@ -219,3 +219,19 @@ console.log(str.replace('i','s')); // it repleac first found char in string  O/P
 console.log(str.replaceAll('i','s')); // it will replace all the i from string  O/P - hs s'm abhsshek
 
 
+//          OBJECT
+
+let obj = {
+    id : 1,
+    name : "Abhi",
+    phone : 7260931389,
+    bike : ["RC450","GT650"]
+}
+
+// get
+console.log(obj.id);
+console.log(obj.bike[1]);
+
+// create
+obj.course["C++","Java"];
+console.log(obj);

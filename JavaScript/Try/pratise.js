@@ -59,6 +59,8 @@ console.log("" == " "); //false
 
 
 
+console.log(" ");
+
 
 
 
@@ -161,6 +163,7 @@ console.log(sum2);
 
 
 var arr = [12,"hi",'B',true,25];
+console.log(arr, typeof(arr));
 
 // PUSH
 arr.push(35,45);
@@ -171,16 +174,48 @@ arr.pop();
 console.log(arr);
 
 //UNSHIFT
-arr.unshift()
+arr.unshift("hehe")
+console.log(arr);
+
+// SHIFT    
+arr.shift();
+console.log(arr);
+
+// SPLICE
+arr.splice(1,2,"hi","baby",false);
+console.log(arr);
+
+// SLICE
+let newArr = arr.slice(1,4);
+console.log(newArr);
+
+console.log(" ");
+
+//          STRING
+var str = "hehehehe";
+
+console.log(str.length);
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+// Split is used to sp
+var str = "hi i'm abhishek";
+let newStr = str.split(" ")
+console.log(newStr, typeof(newStr));
+console.log(typeof(newStr));
+
+// everthing in js except primitive datatype fall's under non-primitive  datatype that is "OBJECT"
+
+// console.log(Array.isArray());
+
+console.log(str.charAt(10));
+
+//  before replace -  "hi i'm abhishek"
+console.log(str.replace('i','s')); // it repleac first found char in string  O/P - hs i'm abhishek
 
 
 
-
-
-
-
-
-
-
+console.log(str.replaceAll('i','s')); // it will replace all the i from string  O/P - hs s'm abhsshek
 
 

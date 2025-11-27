@@ -11,6 +11,12 @@ let emp1 = {
     isMarried : false
 };
 
+console.log(emp1.id);
+console.log(emp1['id']);
+
+
+
+
 let keyName = Object.keys(emp1);
 console.log(keyName);
 

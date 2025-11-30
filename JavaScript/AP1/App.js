@@ -55,8 +55,82 @@ Frotuner.SetBrand("Frotuner");
 console.log(stop)
 console.log(Frotuner);
 
+console.log("hi" + "hello");
 
-sayHello();
-let sayHello = function () {
-    console.log("hi");
+function app (a,b){
+    console.log(a+b);
+    
 }
+app(3,4);
+console.log(app);
+
+
+const getPromise = () => {
+    return new Promise((resolve,reject) => {
+        console.log("I'm a promise");
+        resolve("SucessFully");
+        // reject("Network Error");
+    })
+};
+
+let promise = getPromise();
+promise.then((res) => {
+    console.log("Promise Fulfilled",res);
+});
+
+promise.catch((err) => {
+    console.log("rejected",err);
+    
+})
+// function GetNextIterator(data,getnextdata){
+//     setTimeout(() => {
+//         console.log("data",i);
+//         getnextdata();
+//     }, 3000);
+// }
+
+// for(var i = 0; i<=3; i++)
+// {
+//     GetNextIterator(i,()=>{
+//         GetNextIterator(i,()=>{
+//             GetNextIterator(i,()=>{})
+//         })
+//     })
+// }
+
+
+
+console.log("Fetching Data ...");
+function GetNextIterator(data, getnextdata) {
+    setTimeout(() => {
+        console.log("data", i);
+        getnextdata();
+    }, 3000);
+}
+
+var i = 1;
+
+function start() {
+    if (i > 3) return;   
+    GetNextIterator(i, () => {
+        i++;
+        start();         
+    });
+}
+start();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

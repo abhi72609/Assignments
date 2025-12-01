@@ -16,7 +16,7 @@ console.dir(tagName);
 console.log(tagName);
 
 // querySelector will return only one element 
-let firsttag = document.querySelector("p")
+let firsttag = document.querySelector("p") // it can select tag/class/id 
 console.dir(firsttag);
 console.log(firsttag);
 // if i only want to print inner text no tags then
@@ -30,3 +30,5 @@ console.dir(Alltag);
 console.log(Alltag[0].innerText);
 console.log(Alltag[1].innerText);
 console.log(Alltag[0].textContent);
+
+

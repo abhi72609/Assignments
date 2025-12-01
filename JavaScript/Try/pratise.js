@@ -233,5 +233,23 @@ console.log(obj.id);
 console.log(obj.bike[1]);
 
 // create
-obj.course["C++","Java"];
-console.log(obj);
+// obj.course["C++","Java"];
+// console.log(obj);
+
+
+
+console.log(" ");
+
+
+
+
+
+
+// var userInput = prompt("Enter Your Name");
+// console.log(userInput);
+
+let myResult = myFn(10,20); //
+console.log(myResult);
+function myFn(a,b){ 
+    return a+b;
+}

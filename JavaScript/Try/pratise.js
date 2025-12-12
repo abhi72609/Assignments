@@ -168,9 +168,12 @@ console.log(arr, typeof(arr));
 // PUSH
 arr.push(35,45);
 console.log(arr);
+let newLength = arr.push(1,2);
+console.log(arr);
+
 
 // POP
-arr.pop();
+console.log(arr.pop());
 console.log(arr);
 
 //UNSHIFT

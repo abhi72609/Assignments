@@ -30,14 +30,12 @@ let newElement = document.createElement("h1"); // <h1> </h1>
 newElement.innerHTML = "<i>Hi, New Line added</i>"; // <h1> <i>Hi, New Line added</i> </h1>
 
 document.querySelector("body").prepend(newElement);
-
-
-//      DELETE
-// Remove
-p.remove();
-
 console.log(newElement.innerText); // Hi, New Line added
 console.log(newElement.innerHTML); // <i>Hi, New Line added</i>
 console.log(newElement.outerHTML); // <h1> <i>Hi, New Line added</i> </h1>
 console.log(newElement)
 console.dir(newElement)
+
+//      DELETE
+// Remove
+p.remove();

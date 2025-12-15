@@ -43,7 +43,7 @@ SignUp.addEventListener("click", () => {
     login.style.width = "145px"
 
     document.getElementById("SignUpForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+    // e.preventDefault();
     SignUpObject.UserName = document.getElementById("newUserName").value;
     SignUpObject.Password = document.getElementById("password").value;
     SignUpObject.PhoneNumber = document.getElementById("PhoneNumber").value;

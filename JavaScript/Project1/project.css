@@ -1,5 +1,7 @@
 .body{
     font-family: Arial, Helvetica, sans-serif;
+    /* background-color: black; */
+    
 }
 
 #Authentication{
@@ -7,12 +9,28 @@
     width: 760px;
     display: flex;
     border: 2px solid lightblue;
-    box-shadow: -10px 10px 5px lightblue;
+    box-shadow: -10px 10px 5px lightgray;
     /* box-shadow: 10px -10px 5px lightblue; */
     margin: 125px 425px;
     justify-content: space-evenly;
     align-items: center;
+    background-color: rgb(206, 229, 237);
+    /* background: linear-gradient( lightblue, rgb(96, 123, 132), rgb(81, 104, 111)); */
+    /* background: linear-gradient(
+    135deg,
+    #d9f2ff,
+    #6b8f9c,
+    #445c64
+    ); */
+    background: linear-gradient(
+    135deg,
+    #e3f6ff 0%,
+    #7fa6b2 50%,
+    #3f565e 100%
+    );
 }
+
+
 #Authentication #title{
     display: flex;
     margin-bottom: 400px;
@@ -26,6 +44,7 @@
     width: 300px;
     justify-content: space-evenly;
     align-items: center;
+    background-color: white;
 }
 #LoginPage button{
     display: flex;
@@ -38,6 +57,7 @@
     background-color: lightblue;
     font-size: larger;
     font-weight: 700;
+    color: white;
 }
 #LoginContainer #LoginContainerButton{
     margin-top: 10px;
@@ -51,6 +71,7 @@
     width: 300px;
     justify-content: space-evenly;
     align-items: center;
+    background-color: white;
 }
 #SignUpPage button{
     display: flex;
@@ -63,7 +84,7 @@
     background-color: lightblue;
     font-size: larger;
     font-weight: 700;
-
+    color: white;
 }
 
 #SignUpContainer #SignUpButton{
@@ -75,76 +96,3 @@
 
 
 
-
-
-/*          HomePage CSS         */
-#Header{
-    display: flex;    
-    height: 50px;
-    /* border: 2px solid lightblue; */
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#HomePageHeader{
-    display: flex;  
-    width: 1518px;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 70px;
-    padding-right: 100px;
-}
-#FirstComponent .heading{
-    height: 30px;
-    width: 170px;
-    border: 2px solid lightblue;
-    border-radius: 15px;
-    justify-content: center;
-    align-content: center;
-    padding-left: 10px;
-    background-color: lightblue;
-}
-
-#SecondComponent{
-    display: flex;
-    width: 450px;
-    justify-content: space-between;
-    font-size: large;
-}
-
-#SecondComponent .para{
-    height: 25px;
-    width: 90px;
-    border: 2px solid lightblue;
-    border-radius: 15px;
-    justify-content: center;
-    align-content: center;
-    padding-left: 10px;
-    background-color: lightblue;
-}
-
-
-#body{
-    display: grid;
-    /* border: 2px dashed lightblue; */
-    height: 165vh;
-    margin-top: 10px;
-    gap: 450px;
-    padding: 10px 70px;
-    /* margin-right: 100px; */
-    grid-template-columns: 35px 35px 35px ;
-    grid-template-rows: 10px 10px;
-}
-
-#body .frame{
-    height: 325px;
-    width: 300px;
-    padding-left: 47px;
-    padding-top: 20px;
-    border: 7px double lightblue;
-}
-
-#body .other{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 50px;
-}

@@ -128,7 +128,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    padding: 20px 95px;
+    padding: 20px 65px;
     background: linear-gradient(
     135deg,
     #eef8fc 0%,
@@ -140,6 +140,8 @@
 /* Main Section Wrapper */
 #body .Section {
     width: 100%;
+    border: 2px solid black;
+    padding: 20px 75px;
 }
 
 /* Section 1 Layout */
@@ -198,28 +200,62 @@
     color: #fffcfc;
 }
 
-.Section #LeftClick{
-    display: flex;
+
+#body .button{
+    height: 55px;
+    width: 55px;
+    border: 2px solid black;
+    align-content: center;
     text-align: center;
-    padding-left: 15px;
-    font-size: 35px;
-    font-weight: 900;
-    width: 40px;
-    height: 40px;
-    /* border: 2px solid #6f8f9b; */
-    border-radius: 50%;
-    background-color: white;
 }
 
-.Section #RightClick{
-    display: flex;
-    text-align: center;
-    padding-left: 15px;
-    font-size: 35px;
+.button #LeftClick{
+    height: 35px;
+    width: 35px;
+    font-size: larger;
     font-weight: 900;
-    width: 40px;
-    height: 40px;
-    /* border: 2px solid #6f8f9b; */
-    border-radius: 50%;
-    background-color: white;
+    background-color: #6f8f9b;
+}
+
+.button #RightClick{
+    height: 35px;
+    width: 35px;
+    font-size: larger;
+    font-weight: 900;
+    background-color: #6f8f9b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    align-items: center;
 }

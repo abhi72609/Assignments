@@ -1,31 +1,31 @@
 let loginBtn = document.getElementById("LoginButton");
 let signupBtn = document.getElementById("SignUpButton");
-
 let loginContainer = document.getElementById("LoginContainer");
 let signupContainer = document.getElementById("SignUpContainer");
 
 
 
 loginBtn.addEventListener("click", () => {
+    loginBtn.style.display = "none";
     loginContainer.innerHTML = `
-        <h3>Login</h3>
         <input type="text" id="loginUsername" placeholder="Username">
         <input type="password" id="loginPassword" placeholder="Password">
         <button id="loginSubmit">Login</button>
+
     `;
 });
 
 // SIGNUP FORM
 signupBtn.addEventListener("click", () => {
-    loginContainer.innerHTML = "";
+    signupBtn.style.display = "none";
     signupContainer.innerHTML = `
-        <h3>Signup</h3>
         <input type="text" id="signupUsername" placeholder="Username">
-        <input type="password" id="signupPassword" placeholder="Password">
-        <input type="number" id="signupPhone" placeholder="Phone">
+        <input type="password" id="signupPassword" placeholder="6 Digit Password">
+        <input type="number" id="signupPhone" placeholder="10 Digit-PhoneNo" minlength = "10">
         <button id="signupSubmit">Signup</button>
     `;
 });
+
 
 // SIGNUP LOGIC
 document.addEventListener("click", (e) => {
@@ -35,12 +35,11 @@ document.addEventListener("click", (e) => {
             password: document.getElementById("signupPassword").value,
             phone: document.getElementById("signupPhone").value
         };
-
+    
         if (!user.username || !user.password) {
             alert("All fields required");
             return;
         }
-
         localStorage.setItem("userData", JSON.stringify(user));
         alert("Signup successful! Now Login.");
     }
@@ -67,80 +66,3 @@ document.addEventListener("click", (e) => {
         }
     }
 });
-
-
-
-
-
-
-
-
-
-// let login = document.getElementById('LoginButton')
-// let LoginContainer = document.getElementById('LoginContainer');
-
-// let SignUp = document.getElementById('SignUpButton')
-// let SignUpContainer = document.getElementById('SignUpContainer');
-
-
-// document.addEventListener("click", function (e) {
-//     if (e.target.id === "LoginContainerButton") {
-
-//         let enteredUsername = document.getElementById("LoginUsername").value;
-//         let enteredPassword = document.getElementById("LoginPassword").value;
-
-//         let savedUser = JSON.parse(localStorage.getItem("userData"));
-
-//         if (!savedUser) {
-//             alert("No user found. Please SignUp first.");
-//             return;
-//         }
-
-//         if (
-//             enteredUsername === savedUser.username &&
-//             enteredPassword === savedUser.password
-//         ) {
-//             localStorage.setItem("loggedUser", savedUser.username);
-//             window.location.href = "homepage.html";
-//         } else {
-//             alert("Wrong username or password");
-//         }
-//     }
-// });
-
-
-
-// let SignUpObject = {};
-
-// SignUp.addEventListener("click", () => {
-//     SignUpContainer.innerHTML = `
-//         <div id="SignUp">
-//             <form id="SignUpForm">
-//                 <input type="name" id="newUserName" placeholder="New UserName">
-//                 <input type="password"  id="password" placeholder="password">
-//                 <input type="number" id="PhoneNumber" placeholder="Phone-Number">
-//                 <button type="submit">Submit</button>
-//             </form>
-//         </div>
-//     `;
-//     SignUp.style.visibility = "hidden"    
-//     login.innerHTML = `SignUp is in Process...`
-//     login.style.height = "125px"
-//     login.style.width = "145px"
-
-//     document.getElementById("SignUpForm").addEventListener("submit", function (e) {
-//     e.preventDefault();
-
-//     let SignUpObject = {
-//         username: document.getElementById("newUserName").value,
-//         password: document.getElementById("password").value,
-//         phone: document.getElementById("PhoneNumber").value
-//     };
-
-//     localStorage.setItem("userData", JSON.stringify(SignUpObject));
-
-//     alert("Signup successful! Now Login.");
-// });
-// });
-
-

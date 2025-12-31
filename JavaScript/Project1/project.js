@@ -4,7 +4,6 @@ let loginContainer = document.getElementById("LoginContainer");
 let signupContainer = document.getElementById("SignUpContainer");
 
 
-
 loginBtn.addEventListener("click", () => {
     loginBtn.style.display = "none";
     loginContainer.innerHTML = `

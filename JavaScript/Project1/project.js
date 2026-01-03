@@ -20,7 +20,7 @@ signupBtn.addEventListener("click", () => {
     signupContainer.innerHTML = `
         <input type="text" id="signupUsername" placeholder="Username">
         <input type="password" id="signupPassword" placeholder="6 Digit Password">
-        <input type="number" id="signupPhone" placeholder="10 Digit-PhoneNo" minlength = "10">
+        <input type="number" id="signupPhone" placeholder="10 Digit-PhoneNo">
         <button id="signupSubmit">Signup</button>
     `;
 });
@@ -29,16 +29,27 @@ signupBtn.addEventListener("click", () => {
 // SIGNUP LOGIC
 document.addEventListener("click", (e) => {
     if (e.target.id === "signupSubmit") {
-        let user = {
-            username: document.getElementById("signupUsername").value,
-            password: document.getElementById("signupPassword").value,
-            phone: document.getElementById("signupPhone").value
-        };
-    
-        if (!user.username || !user.password) {
-            alert("All fields required");
+        
+        let username = document.getElementById("signupUsername").value.trim;
+        let password = document.getElementById("signupPassword").value.trim;
+        let phone = document.getElementById("signupPhone").value.trim;
+        
+        //Empty check
+        if (!username || !password || !phone) {
+            alert("All fields Correctly");
             return;
         }
+        //6 digit password check
+        if(!/^\d{6}$/.test(password)){
+            alert("Atleat 6 digit Password");
+            return;
+        }
+        //10 digit phone
+        if(!/^\d{10}$/.test(phone)){
+            alert("Should be 10-Digit PhoneNo.");
+            return;
+        }
+        let user = {username, password, phone};
         localStorage.setItem("userData", JSON.stringify(user));
         alert("Signup successful! Now Login.");
     }

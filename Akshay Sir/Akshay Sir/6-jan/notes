@@ -1,0 +1,218 @@
+// ! Event 
+// Event is an action performed by the user on the screen 
+// if we move the mouse , if we click , if we tap a key , if we submit the form , that is event 
+// events are used to create interactive webpages
+
+// ! Type of Events in JS
+//! 1. mouse events -> whatever action is performed by using mouse is called as mouse event
+// click
+// dblclick
+// mousemove
+// mouseover
+// mouseout
+
+// ! 2. keyboard event -> 
+// keydown
+// keypress
+// keyup
+
+// ! 3. form Events 
+// input
+// change
+// submit
+
+// ! 4. window events 
+// load
+// scroll
+
+
+// ! Ways to handle the events 
+// ! 1. event attributes -> a simple html attribute prefix with on
+// event attributes are used with html elements 
+//  onclick
+//  onmouseout
+//  onmouseover
+//  ondblclick
+//  onkeypress
+//  onchange
+//  onsubmit
+// function fun(){
+//     console.log('Executed');
+// }
+
+// ! 2. DOM properties 
+// element.event = function (){}
+// let btn = document.querySelector('.btn')
+// btn.onclick = function(){
+//     console.log('Event is executed');
+// }
+// ! 3. element.addEventListener('event' , ()=>{})
+    // let btn1 = document.querySelector('.btn1')
+    // // btn1.addEventListener('click' , ()=>{
+    // //     console.log('btn1 is clicked' );
+    // // })
+    // btn1.addEventListener('dblclick' , ()=>{
+    //     console.log('btn1 is double clicked' );
+    // })
+    // btn1.addEventListener('dblclick' , ()=>{
+    //     console.log('btn1 is double clicked' );
+    // })
+    // btn1.addEventListener('mouseenter' , ()=>{
+    //     console.log('mouse has entered the btn' );
+    // })
+    // btn1.addEventListener('mouseout' , ()=>{
+    //     console.log('mouse is out of the btn' );
+    // })
+    // btn1.addEventListener('mousemove' , ()=>{
+    //     console.log('mouse is moving' );
+    // })
+
+
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <style>
+//         *{
+//             margin: 0;
+//             padding: 0;
+//             box-sizing: border-box;
+//         }
+//         .dices{
+//             height: 70vh;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             gap: 50px;
+//         }
+//         .dice{
+//             height: 400px;
+//             width: 400px;
+//             border: 2px solid black;
+//             border-radius: 20px;
+//             overflow: hidden;
+//         }
+//         .dice img{
+//             height: 100%;
+//             width: 100%;
+//         }
+//         h1{
+//             text-align: center;
+//         }
+//         button{
+//             display: block;
+//             margin: auto;
+//             font-size: 24px;
+//             padding: 10px 20px;
+//             margin-top: 20px;
+//         }
+//     </style>
+// </head>
+// <body>
+//   <div class="dices">
+//       <div class="dice">
+//         <img src="./imgs/6.png" class="dice1img" alt="">
+//     </div>
+//     <div class="dice">
+//         <img src="./imgs/6.png" class="dice2img"  alt="">
+//     </div>
+//   </div>
+//     <h1 class="score">12</h1>
+//     <button>Roll Dice</button>
+
+
+//     <script>
+//         let score = document.querySelector('.score')
+//         let img1 = document.querySelector('.dice1img')
+//         let img2 = document.querySelector('.dice2img')
+//         let btn = document.querySelector('button')
+//         btn.addEventListener('click' , ()=>{
+//             let r1 = Math.round(Math.random()*5)+1;
+//             let r2 = Math.round(Math.random()*5)+1;
+//             console.log(r1 , r2);
+//             score.innerHTML = r1+r2
+//             img1.src = `./imgs/${r1}.png`
+//             img2.src = `./imgs/${r2}.png`
+//         })
+        
+//     </script>
+// </body>
+// </html>
+
+
+
+
+
+
+
+// ! Event 
+// Event is an action performed by the user on the screen 
+// if we move the mouse , if we click , if we tap a key , if we submit the form , that is event 
+// events are used to create interactive webpages
+
+// ! Type of Events in JS
+//! 1. mouse events -> whatever action is performed by using mouse is called as mouse event
+// click
+// dblclick
+// mousemove
+// mouseover
+// mouseout
+
+// ! 2. keyboard event -> 
+// keydown
+// keypress
+// keyup
+
+// ! 3. form Events 
+// input
+// change
+// submit
+
+// ! 4. window events 
+// load
+// scroll
+
+
+// ! Ways to handle the events 
+// ! 1. event attributes -> a simple html attribute prefix with on
+// event attributes are used with html elements 
+//  onclick
+//  onmouseout
+//  onmouseover
+//  ondblclick
+//  onkeypress
+//  onchange
+//  onsubmit
+// function fun(){
+//     console.log('Executed');
+// }
+
+// ! 2. DOM properties 
+// element.event = function (){}
+// let btn = document.querySelector('.btn')
+// btn.onclick = function(){
+//     console.log('Event is executed');
+// }
+// ! 3. element.addEventListener('event' , ()=>{})
+    // let btn1 = document.querySelector('.btn1')
+    // // btn1.addEventListener('click' , ()=>{
+    // //     console.log('btn1 is clicked' );
+    // // })
+    // btn1.addEventListener('dblclick' , ()=>{
+    //     console.log('btn1 is double clicked' );
+    // })
+    // btn1.addEventListener('dblclick' , ()=>{
+    //     console.log('btn1 is double clicked' );
+    // })
+    // btn1.addEventListener('mouseenter' , ()=>{
+    //     console.log('mouse has entered the btn' );
+    // })
+    // btn1.addEventListener('mouseout' , ()=>{
+    //     console.log('mouse is out of the btn' );
+    // })
+    // btn1.addEventListener('mousemove' , ()=>{
+    //     console.log('mouse is moving' );
+    // })

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Emoji Generator</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            background-color: aliceblue;
+            font-family: Arial, sans-serif;
+        }
+        #emoji {
+            font-size: 80px;
+            margin: 20px;
+        }
+        #colorName {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <button onclick="changeTheme()">Change Background</button>
+
+    <h2>Random Emoji Generator</h2>
+    <div id="emoji">😀</div>
+    <button <div id="colorName">AliceBlue</div> ></button>
+
+    <button onclick="generateEmoji()">Click Me</button>
+
+    <script>
+        const colors = [
+            { name: "Light Red", code: "#ffadad" },
+            { name: "Peach", code: "#ffd6a5" },
+            { name: "Light Yellow", code: "#fdffb6" },
+            { name: "Mint Green", code: "#caffbf" },
+            { name: "Sky Blue", code: "#9bf6ff" },
+            { name: "Blue", code: "#a0c4ff" },
+            { name: "Lavender", code: "#bdb2ff" },
+            { name: "Pink", code: "#ffc6ff" }
+        ];
+
+        function changeTheme() {
+            // body.classList.toggle('dark'); // if(btn.innerText == 'Dark'){ // btn.innerText = 'Light' // } // else{ // btn.innerText = 'Dark' //
+
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor.code;
+            document.getElementById("colorName").innerText = "Background Color: " + randomColor.name;
+        }
+
+        function generateEmoji() {
+            const emojis = ["😀", "😂", "😍", "😎", "🥳", "🤔", "😴", "😭", "🔥", "💯"];
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            document.getElementById("emoji").innerText = randomEmoji;
+        }
+    </script>
+
+</body>
+</html>

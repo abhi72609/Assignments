@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="colorText"></h1>
+    <button onclick="randomBackground()">Click</button>
+
+    <script>
+        let body = document.body;
+        let heading = document.querySelector('.colorText');
+
+        function randomColor(){
+            let r = Math.floor(Math.random()*255);
+            let g = Math.floor(Math.random()*255);
+            let b = Math.floor(Math.random()*255);
+
+            return `rgb( ${r} , ${g}, ${b})`
+        }
+
+        function randomBackground(){
+            let color = randomColor();
+            body.style.backgroundColor = color;
+            heading.textContent = color;
+        }
+    </script>
+</body>
+</html>

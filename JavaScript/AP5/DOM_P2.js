@@ -1,8 +1,17 @@
 let p = document.querySelector("p")
+//       getAttribute - get/fetch the value of attribute
 console.log(p.getAttribute("class"));
 
-//       setAttribute
+//       setAttribute - new value but it not change the actually value of HTML file
 console.log(p.setAttribute("class","New Class"));
+console.log(p.getAttribute("class"));  
+console.log(p);
+
+//       removeAttribute - to remove the existing attribute of element
+console.log(p.removeAttribute("class"));
+console.log(p);
+console.log(p.innerText);
+
 
 let node = document.querySelector("#heading")
 node.style.color = "black"

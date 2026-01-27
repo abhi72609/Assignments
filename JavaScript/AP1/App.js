@@ -24,6 +24,7 @@ var KaranArjun = {
 
 KaranArjun.__proto__ = Emp;
 console.log("Calculate 10% Tax : ",KaranArjun.calcTax());
+console.log(KaranArjun.hasOwnProperty());
 
 
 

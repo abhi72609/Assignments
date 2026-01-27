@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+
+        }
+        .temp{
+            display: flex;
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 20px;
+            font-family: sans-serif;
+        }
+        form{
+            flex-direction: column;
+            padding: 20px;
+            background-color: rgb(88,194,255);
+        }
+        form label{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        form button{
+            height: 80px;
+            font-size: 30px;
+            margin-top: 20px;
+            border-color: yellow;
+        }
+        .listContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            list-style: none;
+            overflow-y: scroll;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        .listContainer li{
+            padding: 10px 20px;
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="" class="temp">
+        <label for="">Product</label>
+        <input type="text" class="product">
+        <label for="">Qty</label>
+        <input type="text" class="qty">
+        <button>Add</button>
+    </form>
+
+    <ul class="temp listContainer">
+        <li>Potato - 2kg</li>
+    </ul>
+
+    <script>
+        let form = document.querySelector('form')
+        let product = document.querySelector('.product')
+        let qty = document.querySelector('.qty')
+        let container = document.querySelector('.listContainer')
+
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+            let li = document.createElement('li')
+            li.textContent = `${product.value} - ${qty.value}`
+            container.appendChild(li);
+
+            product.value = ''
+            qty.value = ''
+        })
+    </script>
+</body>
+</html>

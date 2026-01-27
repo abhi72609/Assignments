@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid;
+        }
+        section{
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body class="flex">
+    <section class="flex">
+        <div class="flex">
+            <button class="flex">Click</button>
+        </div>
+    </section>
+
+    <script>
+        let body = document.body;
+        let sec = document.querySelector('section');
+        let div = document.querySelector('div');
+        let btn = document.querySelector('button');
+        
+        body.addEventListener('click' , (e)=>{
+            e.stopPropagation();
+            console.log('Body is clicked');
+            
+        })
+        body.addEventListener('click' , (e)=>{
+            e.stopPropagation();
+            console.log('Body is clicked');
+            
+        })
+        sec.addEventListener('click' , (e)=>{
+            e.stopPropagation();
+            console.log('Section is clicked');
+            
+        })
+        btn.addEventListener('click' , (e)=>{
+            e.stopPropagation();
+            console.log('Button is clicked');
+            
+        })
+        div.addEventListener('click' , (e)=>{
+            e.stopPropagation();
+            console.log('Div is clicked');
+            
+        })
+    </script>
+</body>
+</html>

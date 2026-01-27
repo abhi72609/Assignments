@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .car{
+            height: 200px;
+            width: 200px;
+            transition: 0.4s ease all;
+        }
+        .car img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="car" style="position: relative; top: 0px; left: 0px;">
+      <img src="https://www.shutterstock.com/image-vector/orange-car-top-view-vector-600nw-2421522513.jpg" alt="">
+    </div>
+
+    <script>
+        let car = document.querySelector('.car')
+        window.addEventListener('keypress' , (e)=>{
+            if(e.key.toLowerCase() =='a' ){
+               car.style.left = parseInt(car.style.left)-10+'px' ;
+            }
+            if(e.key.toLowerCase() =='d' ){
+           
+                            car.style.left = parseInt(car.style.left)+10+'px' ;
+
+            }
+            if(e.key.toLowerCase() =='w' ){
+                              car.style.top = parseInt(car.style.top)-10+'px' ;
+
+            }
+            if(e.key.toLowerCase() =='s' ){
+                             car.style.top = parseInt(car.style.top)+10+'px' ;
+
+            }
+        })
+    </script>
+</body>
+</html>

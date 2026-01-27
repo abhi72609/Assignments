@@ -16,9 +16,13 @@ console.log(a); // trim space from both starting and ending
 // let a = str.trimEnd();// trim space from ending
 // console.log(a);
 
+
+let putH2 = document.querySelector("h2");
+
 let str1 = "abhishek";
 str1 = str1.toUpperCase()
 console.log(str1);
+putH2.innerHTML = str1;
 
 str1 = str1.toLowerCase()
 console.log(str1);

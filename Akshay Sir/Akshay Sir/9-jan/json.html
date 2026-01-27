@@ -1,0 +1,60 @@
+<!-- // ! json 
+// json stands for javascript object notation 
+// json is a lightweight medium to store and interchage the data b/w client and server 
+// json is language independent 
+// json could be converted to any language 
+
+//! data types supported by json are ->
+// number
+// boolean
+// string
+// null
+// array
+// object 
+
+// ! method of JSON 
+// JSON.stringify()
+// it is used to convert js object into json object 
+// JSON.parse()
+// it is used to convert json data into js object -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    json 
+
+    <script>
+        let jsData = {
+    name:'a',
+    age:40,
+    hobbies:['cricket' , 'chess'],
+    skills:{
+        frontend:['html' , 'css'],
+        backend:['node' , 'express']
+    },
+    isMarried:true,
+    childrens:null,
+    details:()=>{
+        console.log('details');
+    }
+}
+console.log(jsData);
+// ! stringify
+let jsonData = JSON.stringify(jsData)
+console.log(jsonData);
+
+let jsonObj2 = `{"name":"a","age":40,"hobbies":["cricket","chess"],"skills":{"frontend":["html","css"],"backend":["node","express"]},"isMarried":true,"childrens":null}`;
+
+// ! parse
+let jsConverted = JSON.parse(jsonObj2)
+console.log(jsConverted);
+
+    </script>
+</body>
+</html>
+

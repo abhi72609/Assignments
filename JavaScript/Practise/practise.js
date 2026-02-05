@@ -1,3 +1,9 @@
+
+
+
+
+
+
 // let Con1 = document.getElementById("C1") // return single element
 // // console.log(Con1.innerText);
 // // Con1.innerText = "getElementById Is Performed"
@@ -293,3 +299,257 @@ console.log(obj3);
 //     </table>`
 
 // body.innerHTML = tab;
+
+
+// practise
+// let ar1 = new Array("Abhi",22);
+// console.log(ar1);
+
+// function Array(name,age)
+// {
+//     setName.call(this,name);
+//     this.age = age;
+// }
+
+// function setName(name)
+// {
+//     this.name = name;
+// }
+
+
+// Question :- Create table Dynamically using dom and 3 row and 3 column
+let table1 = document.createElement("table");
+
+let tr1 = document.createElement("tr");
+let tr2 = document.createElement("tr");
+let tr3 = document.createElement("tr");
+
+let th1 = document.createElement("th");
+let th2 = document.createElement("th");
+let th3 = document.createElement("th");
+
+let td1 = document.createElement("td");
+let td2 = document.createElement("td");
+let td3 = document.createElement("td");
+
+let td4 = document.createElement("td");
+let td5 = document.createElement("td");
+let td6 = document.createElement("td");
+
+th1.textContent = "Name";
+th2.textContent = "Age";
+th3.textContent = "Gender";
+tr1.append(th1,th2,th3);
+
+td1.textContent = "Abhi"
+td2.textContent = 25
+td3.textContent = 'M'
+tr2.append(td1,td2,td3);
+
+td4.textContent = "Riya"
+td5.textContent = 24
+td6.textContent = 'F'
+td6.style.setProperty("font-size","25px"); //setProperty allow one property at a time
+td5.style.cssText = "font-size:25px;color:orange;background-Color:black"//cssText allow to set multiple property at a time
+tr3.append(td4,td5,td6);
+
+table1.append(tr1,tr2);
+// table1.append(tr2);
+table1.append(tr3);
+document.body.append(table1);
+console.log(table1);
+
+
+
+// Question :- Add a Button that Change BackgroundColor on clicking it 
+
+// BASIC APPROACH
+let button = document.querySelector("#btn")
+//     button.addEventListener("click",(evt)=>{
+//         console.log("button got clicked"); 
+//         // button.textContent = "White"
+//         document.body.style.cssText = "background-color:black;color:white";
+//         console.log("evt");
+// })
+// console.log(button);
+
+let isDark = false;
+
+button.addEventListener("click",()=>{
+    if(!isDark){
+        document.body.style.cssText = "background-color:black;color:white";
+        button.textContent = "White Mode"
+        isDark =  true;
+    }else{
+        document.body.style.cssText = "background-color:white;color:black";
+        button.textContent = "Dark Mode"
+        isDark = false;
+    }
+})
+
+
+// Question 6 :- Create a Promise that resolve after 2 Seconds and logs - "Done"
+let myPromise = new Promise((resolve,reject)=>{
+    let success = true;
+    setTimeout(() => {
+        if(success)
+        // console.log("done"); wrong way
+        resolve("Done 1");
+    }, 3000);
+});
+myPromise.then((msg)=>{
+    // console.log(msg);
+})
+
+// Question 8 :- Rewrite a Promise using ascyn/await
+function myPromise1(msg) {
+        return new Promise((resolve,reject)=>{
+        let success = true;
+        setTimeout(() => {
+            if(success)
+            // console.log("done"); wrong way
+            resolve("Done 2");
+        }, 5000);
+    });
+}
+(async function(){
+    let msg = await  myPromise1();
+    // console.log(msg);
+})()
+
+
+// let ar1 = new Array("Abhi",22);
+// console.log(ar1);
+
+// function Array(name,age)
+// {
+//     setName.call(this,name);
+//     this.age = age;
+// }
+
+// function setName(name)
+// {
+//     this.name = name;
+// }
+
+// function array1(name,age,gender){   WHY WRONG
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+// }
+// let arraysol = new array1();
+// array1.apply(["abhi",22,"male"]);
+// console.log(arraysol);
+
+
+// APPLY Method
+function intro(greeting,punctuation){
+    //To show in the window or UI/UX
+    document.body.append(`${greeting} ${punctuation} Myself ${this.name} i'm ${this.age} old and i live at ${this.address}`)
+    console.log(`${greeting} ${punctuation} Myself ${this.name} i'm ${this.age} old and i live at ${this.address}`);
+    console.log(typeof(intro));
+    
+}
+
+const person = {
+    name : "Abhi",
+    age : 25,
+    address : "Khusrupur"
+}
+
+
+intro.apply(person,["Hello","!"]);
+// document.body.append(intro.) wrong way right way is in function intro itself
+
+
+
+// BIND Method
+let printFullName = function(hometown,state)
+{
+    console.log(`Myself ${this.firstName} ${this.middleName} ${this.lastName}, i leave in ${hometown} ${state}`);
+}
+let name2 = {
+    firstName : "Abhishek",
+    middleName : "Kumar",
+    lastName : "Raj"
+}
+
+let printName =  printFullName.bind(name2,"Khusrupur","Bihar");
+// console.log(printName); why not this to print
+printName();
+console.log(typeof printName);
+
+
+
+
+
+
+
+let arrr = [12,3,10,67]
+for(let i of arrr){
+    // document.body.append(i + " ");
+    console.log(i);
+}
+
+for(let i in arr){
+    console.log(i);
+}
+
+//          ADVANCE METHOD OF ARRAY
+let numb = [10,20,30,40,50];
+console.log(numb);
+
+// FIND()
+let result1 = numb.find((el,i,numb)=>{
+    return el >= 40;
+})
+console.log(`Using Method find result1 is ${result1}`);
+
+// SOME()
+let result2 = numb.some((el,i,numb)=>{
+    return el > 50;
+})
+console.log(result2);
+let br = document.createElement("br") // done for changin line
+document.body.append(br)
+document.body.append(result2)
+
+// EVERY()
+let result3 = numb.every((el,i,numb)=>{
+    return el >= 10
+})
+console.log(result3);
+
+//FILTER()
+let result4 = numb.filter((el,i,numb)=>{
+    return el >= 30
+})
+console.log(result4);
+
+// MAP()
+let result5 = numb.map((el,i,numb)=>{
+    return el * 2;
+})
+console.log(result5);
+console.log(numb);
+
+let obj = {
+    name : "abhi"
+}
+obj.age = 22;
+console.log(obj);
+// delete obj.age;
+// console.log(obj);
+
+obj.hasOwnProperty("name");
+Object.keys(obj)
+
+
+
+
+var s = "Hi Hi Hi"
+var res = s.replace("Hi","Bye");
+console.log(res);
+
+var res = s.replaceAll("Hi","Bye");
+console.log(res);
